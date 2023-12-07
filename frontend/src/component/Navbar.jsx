@@ -21,21 +21,21 @@ const Navbar = () => {
     <div className="flex w-full items-center justify-between p-4 bg-gray-800 text-white">
       <Link to="/">
         <div className="flex items-center cursor-pointer">
-          <span className="text-xl font-bold">SCRAMBLER</span>
+          <span className="text-md lg:text-lg 2xl:text-xl font-bold">SCREAMBLER</span>
         </div>
       </Link>
       <div className="flex space-x-4">
         {isLogin && (
           <Link to="/products/new">
-            <button className="bg-blue-500 bg-opacity-50 px-4 py-2 text-white">
-              Create New Product
+            <button className="bg-blue-500 text-sm lg:text-md 2xl:text-lg bg-opacity-50 px-4 py-2 text-white">
+              Create Product
             </button>
           </Link>
         )}
         {!isLogin ? (
           <button
             onClick={openModal}
-            className="bg-blue-500 px-4 py-2 text-white"
+            className="bg-blue-500 text-sm lg:text-md 2xl:text-lg px-4 py-2 text-white"
           >
             Login
           </button>
@@ -46,7 +46,7 @@ const Navbar = () => {
               setIsLogin(false);
               navigate("/");
             }}
-            className="bg-red-500 px-4 py-2 text-white"
+            className="bg-red-500 text-sm lg:text-md 2xl:text-lg px-4 py-2 text-white"
           >
             Logout
           </button>

@@ -20,7 +20,7 @@ export default function Homepage() {
         <div className="flex flex-col min-h-screen">
             <Component />
             <div className="flex-grow bg-local bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10 mx-10 lg:mx-20 2xl:mx-20">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-4 mx-4 md:mx-20 lg:mx-20 2xl:mx-20 md:gap-6 lg:gap-6 2xl:gap-6">
                     {products?.map((product) => (
                         <Products key={product.id} {...product} />
                     ))}
